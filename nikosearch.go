@@ -6,9 +6,11 @@ type Response struct {
 }
 
 type Meta struct {
-	Status     int    `json:"status"`
-	ID         string `json:"id"`
-	TotalCount int    `json:"totalCount"`
+	Status       int    `json:"status"`
+	ID           string `json:"id"`
+	TotalCount   int    `json:"totalCount"`
+	ErrorCode    string `json:"errorCode"`
+	ErrorMessage string `json:"errorMessage"`
 }
 
 type Data struct {
